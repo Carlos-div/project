@@ -1,0 +1,31 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .underline-animation {
+        position: relative;
+        display: inline-block;
+      }
+      .underline-animation::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
+        left: 0;
+        bottom: -2px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.4s ease;
+      }
+      .underline-animation:hover::after {
+        transform: scaleX(1);
+      }
+      .gradient-text {
+      background: linear-gradient(to right, black, white);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    }
