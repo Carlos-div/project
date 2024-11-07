@@ -4,7 +4,7 @@
 
 <template>
 
-    <footer class="bg-gray-600 text-white p-4 border-t-8 border-gray-700">
+    <footer class="bg-gray-600 font-spartan text-white p-4 border-t-8 border-gray-700">
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
           <img src="/src/assets/imagenes/logo_circulo.png" alt="logo_footer" class="w-12">

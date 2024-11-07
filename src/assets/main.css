@@ -1,1 +1,36 @@
 @import './base.css';
+
+/* sans */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap'); 
+/* lexend */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+/* Poiret one */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
+/* Spartan */ 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
+
+
+/* Contorno del texto */ 
+.text-outline { 
+    color: white;  
+    -webkit-text-stroke: .3px black; /* Contorno negro */ 
+    text-stroke: .1px black; /* Contorno negro */ 
+}
+
+
+
+
+/* Animación de desplazamiento */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Animación al contenedor de imágenes */
+.animate-scroll {
+  animation: scroll 10s linear infinite;
+}

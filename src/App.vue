@@ -5,6 +5,8 @@ import Header from './components/Header.vue'
 import Columnas from './components/Columnas.vue'
 import Footer from './components/Footer.vue'
 import Contenedores from './components/Contenedores.vue'
+import Pleca from './components/Pleca.vue'
+import Marcas from './components/Marcas.vue'
 </script>
 
 <template>
@@ -19,6 +21,11 @@ import Contenedores from './components/Contenedores.vue'
       <Columnas />
 
       <Contenedores />
+
+      <Pleca />
+
+      <Marcas />
+      
     </main>
 
     <footer>
