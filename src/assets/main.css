@@ -30,7 +30,16 @@
   }
 }
 
-/* Animación al contenedor de imágenes */
+/* Animación al contenedor de marcas */
 .animate-scroll {
   animation: scroll 10s linear infinite;
 }
+
+
+/* Imagen de fondo */
+.bg-gif {
+    background-image: url('/imagenes/animation1.gif');
+    background-size: cover; 
+    background-position: center; 
+  }
+  
