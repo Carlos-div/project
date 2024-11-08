@@ -11,7 +11,7 @@ import Marcas from './components/Marcas.vue'
 
 <template>
   
-  <div class="flex flex-col min-h-screen">
+  <div class="flex flex-col min-h-screen overflow-hidden">
 
     <header>
       <Header />
@@ -20,7 +20,12 @@ import Marcas from './components/Marcas.vue'
     <main class="flex-grow">
       <Columnas />
 
-      <Contenedores />
+
+      <!--Aquí va el router para los 3 contenedores-->
+      <RouterLink to="/">
+      </RouterLink> 
+         
+      <RouterView />
 
       <Pleca />
 

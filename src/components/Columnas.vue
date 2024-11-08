@@ -4,11 +4,12 @@
 
 <template>
 
-      <div class="bg-black flex justify-center items-center text-spartan font-normal">
+      <div class="bg-black flex justify-center items-center text-spartan font-normal pt-24">
         <p class="text-black">.</p>
       </div>
-        
-      <div class="grid grid-cols-12 bg-gradient-to-b from-gray-700">
+       
+      <div data-aos="fade-up">
+       <div class="grid grid-cols-12 bg-gradient-to-b from-[#dab866]">
        
           <div class="col-span-1 flex justify-center items-center text-black">
             <ul class="font-spartan font-bold lg:text-4xl">
@@ -49,6 +50,7 @@
         </div>
 
       </div>
+    </div>
 
 </template>
 

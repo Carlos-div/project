@@ -1,9 +1,11 @@
 <script setup>
+
+
 </script>
 
 <template>
     
-
+<div data-aos="fade-left">
     <div class="overflow-hidden pt-6 pb-12">
         <h1 class="font-spartan font-extrabold text-black text-center text-4xl pb-6">Las marcas que confían en nosotros</h1>
         <div class="flex animate-scroll lg:space-x-16 sm:space-y-12 pb-6">
@@ -32,6 +34,7 @@
             <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">
         </div>
     </div>
+</div> 
 
 </template>
 
