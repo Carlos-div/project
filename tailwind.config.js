@@ -7,6 +7,7 @@ export default {
         'sans': ['Lexend Zetta', 'ui-sans-serif', 'system-ui', 'sans-serif'], 
         'poiret': ['Poiret One', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         'spartan': ['League Spartan', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'montserrat': ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans']
       },
       fontWeight: { 
         extraLight: 200, 
@@ -17,6 +18,20 @@ export default {
         bold: 700, 
         extraBold: 800, 
         black: 900, 
+      },
+      width: {
+        '128': '32rem',
+        '144': '36rem',
+        '160': '40rem',
+        '192': '48rem',
+        '256': '64rem',
+        '320': '80rem',
+      },
+      colors: {
+        'primary': '#000000',
+        'secondary': '#ffffff',
+        'gold': '#9c8922',
+        'darkGold': '#7a6f2a',
       }, 
   },
   },

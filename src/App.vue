@@ -7,6 +7,8 @@ import Footer from './components/Footer.vue'
 import Contenedores from './components/Contenedores.vue'
 import Pleca from './components/Pleca.vue'
 import Marcas from './components/Marcas.vue'
+import CursorCircle from './components/CursorCircle.vue'
+import Newsletter from './components/Newsletter.vue'
 </script>
 
 <template>
@@ -19,9 +21,10 @@ import Marcas from './components/Marcas.vue'
     
     <main class="flex-grow">
       <Columnas />
+    
+      <CursorCircle />
 
-
-      <!--Aquí va el router para los 3 contenedores-->
+      <!--Router de los 3 contenedores-->
       <RouterLink to="/">
       </RouterLink> 
          
@@ -31,6 +34,7 @@ import Marcas from './components/Marcas.vue'
 
       <Marcas />
       
+      <Newsletter />
     </main>
 
     <footer>

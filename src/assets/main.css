@@ -8,6 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
 /* Spartan */ 
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Lexend+Zetta:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Quicksand:wght@300..700&display=swap');
 
 
 /* Contorno del texto */ 
@@ -33,6 +35,10 @@
 /* Animación al contenedor de marcas */
 .animate-scroll {
   animation: scroll 10s linear infinite;
+}
+
+.animate-reverse {
+  animation: scroll 10s linear infinite reverse;
 }
 
 

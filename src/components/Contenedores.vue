@@ -5,7 +5,7 @@
 <template>
 <!--Este servirá por si no llegará a ocuparse el routerlink-->
 <div data-aos="fade-right">
-<div class="text-center pt-12 pl-2 pr-2 pb-8 cursor-pointer font-spartan">
+<div class="text-center pt-12 pl-2 pr-2 pb-8 cursor-pointer font-montserrat">
   <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-4">
 
     <div class="h-64 md:h-96 relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg">

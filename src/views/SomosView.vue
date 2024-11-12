@@ -5,7 +5,7 @@
 
 <template>
     <div id="quesomos" class="flex items-center">
-        <p class="text-black font-spartan text-4xl p-16"> 
+        <p class="text-primary font-spartan text-4xl p-16"> 
             Los Cuerpos de Seguridad Auxiliares del Estado de 
             México CUSAEM, Somos una corporación mexiquense
             dedicada a salvaguardar la integridad física y el patrimonio
