@@ -9,6 +9,7 @@ import Pleca from './components/Pleca.vue'
 import Marcas from './components/Marcas.vue'
 import CursorCircle from './components/CursorCircle.vue'
 import Newsletter from './components/Newsletter.vue'
+import Navegadores from './components/Navegadores.vue'
 </script>
 
 <template>
@@ -23,6 +24,8 @@ import Newsletter from './components/Newsletter.vue'
       <Columnas />
     
       <CursorCircle />
+
+      <Navegadores />
 
       <!--Router de los 3 contenedores-->
       <RouterLink to="/">

@@ -9,7 +9,7 @@
         <p class="text-primary">.</p>
       </div>
        
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" class="">
        <div class="grid grid-cols-12 bg-gradient-to-b from-[#dab866]">
        
           <div class="col-span-1 flex justify-center items-center text-primary">
@@ -24,7 +24,7 @@
           </div>
 
   
-        <div class="col-span-10 bg-gif container mx-auto p-4 pb-40">
+        <div class="col-span-10 bg-gif container mx-auto p-4 pb-[433px]"> <!--pb-40 pb-96 pb-[433px]-->
           <div class="container mx-auto p-4"> 
             <img src="/imagenes/logo1.png" alt="logo_columna" class="container mx-auto w-24 md:w-32 lg:w-40">
               <h1 class="text-center pt-6 text-xl md:text-2xl lg:text-4xl font-montserrat font-normal text-primary">Cuerpos de Seguridad Auxiliares del Estado de México</h1>

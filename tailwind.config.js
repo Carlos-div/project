@@ -33,6 +33,9 @@ export default {
         'gold': '#9c8922',
         'darkGold': '#7a6f2a',
       }, 
+      padding: {
+        '433px': '433px',
+      }
   },
   },
   plugins: [],
