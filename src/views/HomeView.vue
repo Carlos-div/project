@@ -20,7 +20,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 
 
     <RouterLink :to="{ path: 'unete', hash: '#unete' }">
-      <div data-aos="fade-right" id="section2">
+      <div data-aos="fade-left" id="section2">
       <div class="h-96 md:h-96 lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg mt-8">
       <img src="/imagenes/police.gif" alt="Acerca de CUSAEM" class="absolute inset-0 w-full h-full object-cover">
         <div class="relative flex items-center justify-center space-x-2 p-4">

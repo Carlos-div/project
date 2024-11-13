@@ -31,11 +31,10 @@
         </div>
       </a>
     </section>
-  </template>
+</template>
   
-  <style scoped>
+<style scoped>
  
-  
   .iconos {
     @apply fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-6 z-40;
   }
@@ -73,5 +72,6 @@
     opacity: 1;
     margin-left: 1rem;
   }
-  </style>
+
+</style>
   
