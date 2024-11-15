@@ -1,10 +1,102 @@
 <script setup>
+import { ref, onMounted } from 'vue';
 
+// Datos para los cambios de contenido
+const contents = [
+  {
+    title: 'Intel',
+    description: 'Sirviendo a Intel en su seguridad durante 45 años.',
+    image: '/imagenes/intel.png'
+  },
+  {
+    title: 'Pepsi',
+    description: 'Pepsi, una marca icónica con una historia rica. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: '/imagenes/pepsi.png'
+  },
+  {
+    title: 'NBC',
+    description: 'NBC, protegiendo noticias y verdades. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: '/imagenes/nbc.png'
+  },
+  {
+    title: 'Oracle',
+    description: 'Oracle, software de calidad. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: '/imagenes/oracle.png'
+  },
+  {
+    title: 'Clipart',
+    description: 'Clipart, único en su clase. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: '/imagenes/clipart.png'
+  },
+  {
+    title: 'Finanzas',
+    description: 'Finanzas, energía y acción. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: '/imagenes/finanzas.png'
+  },
+  {
+    title: 'Abstract',
+    description: 'Abstract, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    image: '/imagenes/abstract.png'
+  },
+];
+
+// Referencias reactivas para los elementos dinámicos
+const currentContent = ref(0);
+const title = ref(contents[currentContent.value].title);
+const description = ref(contents[currentContent.value].description);
+const image = ref(contents[currentContent.value].image);
+
+onMounted(() => {
+  setInterval(() => {
+    currentContent.value = (currentContent.value + 1) % contents.length;
+    title.value = contents[currentContent.value].title;
+    description.value = contents[currentContent.value].description;
+    image.value = contents[currentContent.value].image;
+  }, 5000);
+});
 </script>
 
 <template>
-    
-<div data-aos="fade-left">
+  <div class="flex justify-center items-center h-screen p-6" id="section4">
+    <div class="flex flex-col sm:flex-col bg-white shadow-2xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144">
+      <div class="flex flex-col md:flex-row pt-12">
+        <div class="w-full md:w-1/2 p-8 text-left">
+          <h1 class="font-montserrat font-extrabold text-gray-900 text-6xl">{{ title }}</h1>
+          <h3 class="font-montserrat font-extrabold text-gray-900 text-xl pt-4">{{ description }}</h3>
+        </div>
+        <div class="w-auto md:w-1/2 p-6 flex items-center justify-center bg-gray-100 bg-cover bg-center" :style="{ backgroundImage: `url(${image})` }">
+        </div>
+      </div>
+      <div class="overflow-hidden pt-6 pb-12 w-full">
+        <h1 class="font-montserrat font-extrabold text-primary text-center text-4xl p-6">Las marcas que confían en nosotros</h1>
+        <div class="flex animate-scroll lg:space-x-16 sm:space-y-12 pb-6">
+          <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
+          <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
+          <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
+          <img src="/imagenes/finanzas.png" alt="finanzas_marcas" class="h-16 w-auto">
+          <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
+          <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
+          <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">  
+          <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
+          <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
+          <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
+          <img src="/imagenes/finanzas.png" alt="finanzas_marcas" class="h-16 w-auto">
+          <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
+          <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
+          <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+
+</style>
+
+
+
+<!--<div data-aos="fade-left">
     <div class="overflow-hidden pt-6 pb-12" id="section4">
         <h1 class="font-montserrat font-extrabold text-primary text-center text-4xl p-6 ">Las marcas que confían en nosotros</h1>
         <div class="flex animate-scroll lg:space-x-16 sm:space-y-12 pb-6">
@@ -15,7 +107,7 @@
             <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
             <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
             <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">          
-            <!-- Duplicar imágenes para hacer el bucle continuo -->
+             Duplicar imágenes para hacer el bucle continuo 
             <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
             <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
             <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
@@ -23,7 +115,7 @@
             <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
             <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
             <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">
-            <!-- Triplicar imágenes para hacer el bucle continuo -->
+             Triplicar imágenes para hacer el bucle continuo 
             <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
             <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
             <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
@@ -46,7 +138,7 @@
             <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
             <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
             <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">          
-            <!-- Duplicar imágenes para hacer el bucle continuo -->
+             Duplicar imágenes para hacer el bucle continuo 
             <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
             <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
             <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
@@ -54,7 +146,7 @@
             <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
             <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
             <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">
-            <!-- Triplicar imágenes para hacer el bucle continuo -->
+             Triplicar imágenes para hacer el bucle continuo 
             <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
             <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
             <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
@@ -64,8 +156,4 @@
             <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">
         </div>
     </div>
-</div> 
-
-
-</template>
-
+</div> -->
