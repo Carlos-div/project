@@ -1,36 +1,95 @@
 <script setup>
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
 
 </script>
 
 <template>
 
+  <div class="snap-footer">
     <footer class="bg-gray-600 font-montserrat text-secondary p-4 border-t-8 border-gray-700">
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
-          <img src="/src/assets/imagenes/logo_circulo.png" alt="logo_footer" class="w-12" data-aos="fade-up">
+          <img src="/src/assets/imagenes/logo_circulo.png" alt="logo_footer" class="w-12" >
         </div>
         <div class="flex space-x-4 md:space-x-16 mb-4 md:mb-0">
-          <a href="#about" class="hover:text-gray-400" data-aos="zoom-in-down">Sobre Nosotros</a>
-          <a href="#services" class="hover:text-gray-400" data-aos="zoom-in-left">Servicios</a>
-          <a href="#contact" class="hover:text-gray-400" data-aos="zoom-in-right">Contacto</a>
+          <a href="#about" class="hover:text-gray-400" >Sobre Nosotros</a>
+          <a href="#services" class="hover:text-gray-400" >Servicios</a>
+          <a href="#contact" class="hover:text-gray-400">Contacto</a>
         </div>
         <div>
-          <p class="text-sm" data-aos="zoom-out">&copy; 2024 CUSAEM. Todos los derechos reservados.</p>
-        </div>
-        <button @click="scrollToTop" class="rounded-full bg-gray-200 p-2 transition duration-300 animate-pulse" data-aos="fade-down"> 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="size-2 sm:size-4 md:size-6 xl:size-8">
-              <path fill-rule="evenodd" d="M11.47 10.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 12.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
-              <path fill-rule="evenodd" d="M11.47 4.72a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 1 1-1.06 1.06L12 6.31l-6.97 6.97a.75.75 0 0 1-1.06-1.06l7.5-7.5Z" clip-rule="evenodd" />
-            </svg>
-        </button>
+          <p class="text-sm">&copy; 2024 CUSAEM. Todos los derechos reservados.</p>
+        </div> 
+        <a href="#inicio" class="button-footer">
+          <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+            </path>
+          </svg>
+        </a>
       </div>
     </footer>
-
+  </div>
   </template>
   
 
-  
+  <style>
+/* From Uiverse.io by vinodjangid07 */ 
+.button-footer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button-footer:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #4b5563;
+  align-items: center;
+}
+
+.button-footer:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button-footer::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Inicio";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button-footer:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+</style>
+
+ 

@@ -10,11 +10,27 @@ import Marcas from './components/Marcas.vue'
 import CursorCircle from './components/CursorCircle.vue'
 import Newsletter from './components/Newsletter.vue'
 import Navegadores from './components/Navegadores.vue'
+
+document.addEventListener("DOMContentLoaded", function() {
+  gsap.from(".snap-item", {
+    opacity: 0,
+    duration: 1,
+    y: 50,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".snap-container",
+      start: "top center",
+      end: "bottom center",
+      scrub: true,
+    }
+  });
+});
 </script>
 
 <template>
   
-  <div class="flex flex-col min-h-screen overflow-hidden">
+  <div class="flex flex-col min-h-screen overflow-hidden snap-container">
 
     <header>
       <Header />

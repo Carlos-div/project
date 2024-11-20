@@ -5,12 +5,13 @@
 
 <template>
 
-      <div class="bg-black flex justify-center items-center mt-24">
+  <div class="snap-item pt-24">
+      <div class="bg-black flex justify-center items-center  ">
         <p class="text-primary">.</p>
       </div>
        
-      <div data-aos="fade-up" class="">
-       
+      <div class="">
+       <!-- <div data-aos="fade-up" class="">-->
        
           
 
@@ -34,6 +35,7 @@
       
 
     </div>
+  </div>
 
 </template>
 

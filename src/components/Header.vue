@@ -9,7 +9,7 @@ const toggleMenu = () => {
 </script>
 
 <template>
-  <div>
+  <div id="inicio">
     <nav class="bg-opacity-50 fixed top-0 left-0 w-full p-4 backdrop-blur-sm z-50">
       <div class="container mx-auto flex justify-between items-center">
         <RouterLink to="/" class="relative group">

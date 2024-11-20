@@ -3,8 +3,8 @@
 </script>
 
 <template>
-
-<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#dab866] to-black p-4" data-aos="zoom-in-up" id="section5">
+<!--
+<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#dab866] to-black p-4 snap-item" data-aos="zoom-in-up" id="section5">
   <div class="bg-white bg-opacity-30 p-8 rounded-2xl shadow-2xl max-w-lg w-full font-montserrat">
     <h2 class="text-3xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#dab866] to-black">¡Únete a Nuestra Newsletter!</h2>
     <form class="space-y-6">
@@ -27,7 +27,7 @@
     </form>
   </div>
 </div>
-
+-->
 
 </template>
 

@@ -30,3 +30,48 @@
     }
     }
 
+
+    /* scroll */
+    html, body {
+      height: 100%; /* Asegura que el contenedor principal ocupe toda la altura */
+      margin: 0;
+      padding: 0;
+    }
+    
+    
+    .container {
+      height: 100%; /* Ocupa toda la altura disponible */
+    }
+    
+    .snap-container {
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory; /* Desplazamiento vertical obligatorio */
+      height: 100vh; /* Ajusta la altura para el contenedor */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .snap-item {
+      scroll-snap-align: start;
+      flex: none;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      margin-bottom: 10px; /* Margen entre elementos */
+    }
+  
+      
+    .snap-items {
+      scroll-snap-align: start;
+      flex: none;
+      width: 100%;
+      height: 70vh;
+    }
+    
+    .snap-footer {
+      scroll-snap-align: start;
+      flex: none;
+      width: 100%;
+      height: 7vh;
+    }
+    
