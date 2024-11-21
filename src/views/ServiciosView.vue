@@ -1,12 +1,19 @@
 <script setup>
+import { onMounted } from 'vue';
 
+onMounted(() => { const firstLocation = document.querySelector('.scroll-up'); 
+if (firstLocation) 
+{ firstLocation.scrollIntoView({ behavior: 'smooth' }); 
+setTimeout(() => { window.scrollBy(0, -100);  
+  }, 500); 
+  } });
 </script>
 
 
 
 <template>
 
-  <div class="snap-item">
+  <div class="snap-item scroll-up">
     <div id="servicios" class="flex justify-center items-center p-16">
       <div class="relative">     
         <div class="terminal-loader">

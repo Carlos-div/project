@@ -49,3 +49,41 @@
     background-position: center; 
   }
   
+
+
+
+
+/* Scroll */
+
+.IDscroll{
+  scroll-behavior: smooth;
+}
+
+/* ID para router */
+.scroll-adjust:before {
+  content: "";
+  display: block;
+  height: 175px; /* Ajusta este valor según sea necesario */
+  margin-top: -100px; /* El mismo valor negativo */
+} 
+
+/* ID para el home */
+.scroll-id:before {
+  content: "";
+  display: block;
+  height: 10px; /* Ajusta este valor según sea necesario */
+  margin-top: 10px; /* El mismo valor negativo */
+} 
+
+/* scroll id prueba servicios*/
+.scroll-margin{
+  scroll-margin-top: 96px;
+}
+
+.scroll-somos{
+  scroll-margin-top: 80px;
+}
+
+.navegacion{
+  scroll-padding-top: 64px;
+}  
