@@ -12,7 +12,7 @@ import Newsletter from './components/Newsletter.vue'
 import Navegadores from './components/Navegadores.vue'
 
 document.addEventListener("DOMContentLoaded", function() {
-  gsap.from(".snap-item", {
+  gsap.from(".snap-item:not([data-aos])", {
     opacity: 0,
     duration: 1,
     y: 50,
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+
 </script>
 
 <template>

@@ -1,5 +1,9 @@
-<script setup>
+<script>
 import TheWelcome from '../components/TheWelcome.vue'
+import AOS from 'aos'; 
+
+export default { mounted() { 
+  this.$nextTick(() => { AOS.refresh(); }); }, };
 </script>
 
 <template>
@@ -9,12 +13,12 @@ import TheWelcome from '../components/TheWelcome.vue'
 
   <div class="snap-item">
   <RouterLink :to="{ path: 'somos', hash: '#quesomos' }">
-    <div id="section1">
+    <div id="section1" >
       <!-- <div data-aos="fade-right" id="section1">-->
     <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg">
-      <img src="/imagenes/car-inte.gif" alt="Nuestros Servicios" class="absolute inset-0 w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4">
-       <img src="/imagenes/somos.png" alt="somos_contenedor_texto" class="w-64 md:w-96">
+      <img src="/imagenes/car-inte.gif" alt="Nuestros Servicios" class="absolute inset-0 w-full h-full object-cover z-10">
+      <div class="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4" data-aos="fade-right">
+       <img src="/imagenes/somos.png" alt="somos_contenedor_texto" class="w-64 md:w-96 z-20" > 
       </div>
     </div>
   </div>
