@@ -7,7 +7,8 @@ export default {
         'sans': ['Lexend Zetta', 'ui-sans-serif', 'system-ui', 'sans-serif'], 
         'poiret': ['Poiret One', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         'spartan': ['League Spartan', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        'montserrat': ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans']
+        'montserrat': ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans'],
+        'roboto': ['Roboto', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontWeight: { 
         extraLight: 200, 

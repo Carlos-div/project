@@ -11,21 +11,21 @@ import CursorCircle from './components/CursorCircle.vue'
 import Newsletter from './components/Newsletter.vue'
 import Navegadores from './components/Navegadores.vue'
 
-document.addEventListener("DOMContentLoaded", function() {
-  gsap.from(".snap-item:not([data-aos])", {
-    opacity: 0,
-    duration: 1,
-    y: 50,
-    stagger: 0.3,
-    ease: "power2.out",
-    scrollTrigger: {
-      trigger: ".snap-container",
-      start: "top center",
-      end: "bottom center",
-      scrub: true,
-    }
-  });
-});
+//document.addEventListener("DOMContentLoaded", function() {
+//  gsap.from(".snap-item:not([data-aos])", {
+//    opacity: 0,
+//    duration: 1,
+//    y: 50,
+//   stagger: 0.3,
+//    ease: "power2.out",
+//    scrollTrigger: {
+//      trigger: ".snap-container",
+//      start: "top center",
+//      end: "bottom center",
+//      scrub: true,
+//    }
+//  });
+// });
 
 </script>
 
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <main class="flex-grow">
       <Columnas />
     
-      <CursorCircle />
+     <!-- <CursorCircle />-->
 
       <Navegadores />
 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
       <Pleca />
 
       <Marcas />
-      
+
       <Newsletter />
     </main>
 
@@ -64,3 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 
 </template>
+
+
+<style>
+
+    </style>

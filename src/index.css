@@ -39,9 +39,9 @@
     }
     
     
-    .container {
+   /* .container {
       height: 100%; /* Ocupa toda la altura disponible */
-    }
+   /* } */
     
     .snap-container {
       overflow-y: scroll;

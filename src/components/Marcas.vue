@@ -57,37 +57,38 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex justify-center items-center h-screen p-6 snap-item" id="section4">
-    <div class="flex flex-col sm:flex-col bg-white shadow-2xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144">
-      <div class="flex flex-col md:flex-row pt-12">
-        <div class="w-full md:w-1/2 p-8 text-left">
-          <h1 class="font-montserrat font-extrabold text-gray-900 text-6xl">{{ title }}</h1>
-          <h3 class="font-montserrat font-extrabold text-gray-900 text-xl pt-4">{{ description }}</h3>
-        </div>
-        <div class="w-auto md:w-1/2 p-6 flex items-center justify-center bg-gray-100 bg-cover bg-center" :style="{ backgroundImage: `url(${image})` }">
-        </div>
-      </div>
-      <div class="overflow-hidden pt-6 pb-12 w-full">
-        <h1 class="font-montserrat font-extrabold text-primary text-center text-4xl p-6">Las empresas que confían en nosotros</h1>
-        <div class="flex animate-scroll lg:space-x-16 sm:space-y-12 pb-6">
-          <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
-          <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
-          <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
-          <img src="/imagenes/finanzas.png" alt="finanzas_marcas" class="h-16 w-auto">
-          <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
-          <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
-          <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">  
-          <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto">
-          <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto">
-          <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto">
-          <img src="/imagenes/finanzas.png" alt="finanzas_marcas" class="h-16 w-auto">
-          <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto">
-          <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto">
-          <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto">
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="relative h-screen flex justify-center items-center snap-item" id="section4"> 
+    <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-75" /> 
+    <div class="relative flex flex-col sm:flex-col bg-opacity-75 shadow-2xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144 z-10 p-6"> 
+      <div class="flex flex-col md:flex-row pt-12"> 
+        <div class="w-full md:w-1/2 p-8 text-left"> 
+          <h1 class="font-montserrat font-extrabold text-gray-900 text-6xl">{{ title }}</h1> 
+          <h3 class="font-montserrat font-extrabold text-gray-900 text-xl pt-4">{{ description }}</h3> 
+          </div> 
+          <div class="w-auto md:w-1/2 p-6 flex items-center justify-center bg-gray-100 bg-cover bg-center" :style="{ backgroundImage: `url(${image})` }"> 
+          </div>
+          </div>
+          <div class="overflow-hidden pt-6 pb-12 w-full"> 
+            <h1 class="font-montserrat font-extrabold text-primary text-center text-4xl p-6">Las empresas que confían en nosotros</h1> 
+            <div class="flex animate-scroll lg:space-x-16 sm:space-y-12 pb-6"> 
+              <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/finanzas.png" alt="finanzas_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/pepsi.png" alt="pepsi_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/abstract.png" alt="abstract_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/clipart.png" alt="clipart_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/finanzas.png" alt="finanzas_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/intel.png" alt="intel_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/nbc.png" alt="nbc_marcas" class="h-16 w-auto"> 
+              <img src="/imagenes/oracle.png" alt="oracle_marcas" class="h-16 w-auto"> 
+      </div> 
+    </div> 
+  </div> 
+</div>
 </template>
 
 <style scoped>
