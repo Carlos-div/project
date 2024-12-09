@@ -26,6 +26,14 @@
           </svg>
         </a>
       </div>
+      <!--Seguna columna de prueba
+      <div class="flex flex-col md:flex-row justify-between items-center pr-24 pl-24">
+        <p>Datos de la empresa</p>
+        <p>Ubicación Loma</p>
+        <p>Ubicación Lerma</p>
+        <p>Ubicación Auxiliar</p>
+      </div>
+      -->
     </footer>
   </div>
   </template>

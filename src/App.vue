@@ -10,6 +10,7 @@ import Marcas from './components/Marcas.vue'
 import CursorCircle from './components/CursorCircle.vue'
 import Newsletter from './components/Newsletter.vue'
 import Navegadores from './components/Navegadores.vue'
+import Locaciones from './components/Locaciones.vue'
 
 //document.addEventListener("DOMContentLoaded", function() {
 //  gsap.from(".snap-item:not([data-aos])", {
@@ -53,6 +54,8 @@ import Navegadores from './components/Navegadores.vue'
       <Pleca />
 
       <Marcas />
+
+      <Locaciones />
 
       <Newsletter />
     </main>
