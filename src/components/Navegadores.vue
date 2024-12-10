@@ -9,19 +9,25 @@
     <a href="#section2" class="button-container">
       <div class="button group">
         <div class="icon">2</div>
-        <span>Empleo</span>
+        <span>Servicios</span>
       </div>
     </a>
     <a href="#section3" class="button-container">
       <div class="button group">
         <div class="icon">3</div>
-        <span>Servicios</span>
+        <span>Empleo</span>
       </div>
     </a>
     <a href="#section4" class="button-container">
       <div class="button group">
         <div class="icon">4</div>
         <span>Confianza</span>
+      </div>
+    </a>
+    <a href="#section5" class="button-container">
+      <div class="button group">
+        <div class="icon">5</div>
+        <span>Ubicación</span>
       </div>
     </a>
   </section>

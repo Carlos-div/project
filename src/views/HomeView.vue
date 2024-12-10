@@ -15,10 +15,9 @@
       <!--Del header--><div id="acerca de"></div>
       <!-- <div data-aos="fade-right" id="section1">-->
     <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg">
-      <img src="/imagenes/car-inte.gif" alt="Nuestros Servicios" class="absolute inset-0 w-full h-full object-cover z-10">
-      <div class="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4">
-       <img src="/imagenes/somos.png" alt="somos_contenedor_texto" class="w-64 md:w-96 z-20"> 
-      </div>
+      <video autoplay muted loop class="bg-video">
+    <source src="/imagenes/Quienes_somos.mp4" type="video/mp4">
+  </video>
     </div>
   </div>
     </RouterLink>
@@ -32,7 +31,7 @@
         <!--<div data-aos="fade-left" id="section2">-->
       <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg mt-8 ">
         <video autoplay muted loop class="bg-video">
-    <source src="/imagenes/Prueba1b.mp4" type="video/mp4">
+    <source src="/imagenes/Servicios.mp4" type="video/mp4">
   </video>
     </div>  
   </div>    
@@ -46,10 +45,9 @@
         <!--del header--><div id="services"></div>
         <!--<div data-aos="fade-right" id="section3">-->
       <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg mt-8">
-      <img src="/imagenes/town.gif" alt="Contrataciones" class="absolute inset-0 w-full h-full object-cover">
-      <div class="absolute bottom-0 left-0 right-0 flex items-center justify-center p-4">
-    <img src="/imagenes/servicios.png" alt="servicios_contenedor_texto" class="w-64 md:w-96">
-    </div>
+        <video autoplay muted loop class="bg-video">
+    <source src="/imagenes/Unete-.mp4" type="video/mp4">
+  </video>
     </div>
   </div>
         </RouterLink>

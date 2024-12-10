@@ -5,7 +5,7 @@
 
 <template>
 
-  <div class="snap-item pt-20 md:pt-24 lg:pt-24">
+  <div class="snap-item pt-12 md:pt-16 lg:pt-16">
       <div class="bg-black flex justify-center items-center  ">
         <p class="text-primary">.</p>
       </div>
@@ -17,7 +17,7 @@
   
         <div class="bg-video-container pb-[433px]">
   <video autoplay muted loop class="bg-video">
-    <source src="/imagenes/prueba.mp4" type="video/mp4">
+    <source src="/imagenes/Entrada.mp4" type="video/mp4">
   </video>
   <div class="overlay-content">
     <img src="/imagenes/logo1.png" alt="logo_columna" class="container mx-auto w-24 md:w-32 lg:w-40 pt-12">
