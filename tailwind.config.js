@@ -44,6 +44,11 @@ export default {
       }, 
       padding: {
         '433px': '433px',
+      },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        '4xl': '0 45px 75px -20px rgba(0, 0, 0)',
+        '5xl': '0 55px 95px -25px rgba(0, 0, 0)'
       }
   },
   },

@@ -176,7 +176,7 @@ onMounted(() => {
 <template>
   <div class="relative h-screen flex justify-center items-center snap-item" id="section4">
     <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-75" />
-    <div class="relative flex flex-col sm:flex-col bg-white shadow-2xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144 z-10 p-6">
+    <div class="relative flex flex-col sm:flex-col bg-white shadow-4xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144 z-10 p-6">
       <div class="flex flex-col md:flex-row pt-12">
         <div class="w-full md:w-1/2 p-8 text-left">
           <h1 class="font-montserrat font-extrabold text-gray-900 text-6xl">{{ title }}</h1>
