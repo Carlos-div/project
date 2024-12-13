@@ -57,6 +57,8 @@ import Locaciones from './components/Locaciones.vue'
 
       <Locaciones />
 
+      
+
       <Newsletter />
     </main>
 

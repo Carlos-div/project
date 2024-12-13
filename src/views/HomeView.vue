@@ -3,25 +3,32 @@
 
 
 <template>
-<div class="text-center pt-12 md:pt-24 lg:pt-24 pl-2 pr-2 pb-8 cursor-pointer font-spartan">
-  <!--Quiero que esta imagen quede detrás de cada contenido-->
+<div class="text-center pt-12 md:pt-24 lg:pt-24 pl-2 pr-2 pb-8 cursor-pointer font-montserrat">
+ 
   
 
 
   <div class="snap-item relative">
-    <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0" /> 
+  <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0" />
   <RouterLink :to="{ path: 'somos', hash: '#quesomos' }">
     <div id="section1">
-      <!--Del header--><div id="acerca de"></div>
+      <!-- Del header enlace NO LO BORRES -->
+      <div id="acerca de"></div>
       <!-- <div data-aos="fade-right" id="section1">-->
-    <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg">
-      <video autoplay muted loop class="bg-video">
-    <source src="/imagenes/Quienes_somos.mp4" type="video/mp4">
-  </video>
+      <div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
+        <video autoplay muted loop class="bg-video w-full h-full object-cover">
+          <source src="/imagenes/Quienes_somos.mp4" type="video/mp4">
+        </video>
+        <!-- Aquí el botón -->
+        <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+      </div>
     </div>
-  </div>
-    </RouterLink>
-  </div>
+  </RouterLink>
+</div>
+
+
+
+
 
   <div class="snap-item relative">
     <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0" /> 
@@ -29,11 +36,13 @@
       <div id="section2">
         <!--del header--><div id="contracts"></div>
         <!--<div data-aos="fade-left" id="section2">-->
-      <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg mt-8 ">
-        <video autoplay muted loop class="bg-video">
-    <source src="/imagenes/Servicios.mp4" type="video/mp4">
-  </video>
-    </div>  
+      <<div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
+        <video autoplay muted loop class="bg-video w-full h-full object-cover">
+          <source src="/imagenes/Servicios.mp4" type="video/mp4">
+        </video>
+        <!-- Aquí el botón -->
+        <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+      </div> 
   </div>    
         </RouterLink>
   </div>
@@ -44,11 +53,13 @@
       <div id="section3">
         <!--del header--><div id="services"></div>
         <!--<div data-aos="fade-right" id="section3">-->
-      <div class="h-screen md:h-screen lg:h-screen relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg mt-8">
-        <video autoplay muted loop class="bg-video">
-    <source src="/imagenes/Unete-.mp4" type="video/mp4">
-  </video>
-    </div>
+          <div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
+        <video autoplay muted loop class="bg-video w-full h-full object-cover">
+          <source src="/imagenes/Unete-.mp4" type="video/mp4">
+        </video>
+        <!-- Aquí el botón -->
+        <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+      </div>
   </div>
         </RouterLink>
   </div>
@@ -58,6 +69,47 @@
 
 </template>
 
+
+<style>
+.Btn1 {
+  width: 175px;
+  height: 40px;
+  display: flex;
+  align-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .5s;
+}
+
+
+.Btn1::before {
+  width: 175px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  left: -100%;
+  top: 0;
+  transition-duration: .5s;
+  mix-blend-mode: difference;
+}
+
+.Btn1:hover::before {
+  transition-duration: .5s;
+  transform: translate(100%,-50%);
+}
+
+.Btn1:active {
+  transform: translate(5px,5px);
+  transition-duration: .5s;
+}
+</style>
 
 <!-- Por si la cago 
 <div data-aos="fade-right">

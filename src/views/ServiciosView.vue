@@ -13,7 +13,20 @@ setTimeout(() => { window.scrollBy(0, -100);
 
 <template>
 
-  <div class="snap-item scroll-up">
+  <div class="snap-item scroll-up relative">
+    <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-75" />
+     <!--Boton regresar a home-->
+     <RouterLink to="/" class="relative group">    
+        <button class="mt-24 bg-white text-center w-48 rounded-2xl h-14 relative text-black text-xl font-montserrat group" type="button">
+          <div class="bg-zinc-800 rounded-xl h-12 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" height="25px" width="25px">
+              <path d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z" fill="#000000"></path>
+              <path d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z" fill="#000000"></path>
+            </svg>
+          </div>
+          <p class="translate-x-2">Regresar</p>
+        </button>
+      </RouterLink>
     <div id="servicios" class="flex justify-center items-center p-16">
       <div class="relative">     
         <div class="terminal-loader">
@@ -60,7 +73,7 @@ setTimeout(() => { window.scrollBy(0, -100);
   border: 0.1em solid #333;
   background-color: #1a1a1a;
   color: #0f0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat";
   font-size: 1em;
   padding: 1.5em 1em;
   width: 32em;
