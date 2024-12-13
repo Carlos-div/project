@@ -5,7 +5,7 @@
 <template>
 
   <div class="snap-footer">
-    <footer class="relative bg-gray-600 font-montserrat text-secondary p-4 border-t-8 border-gray-700 mt-8">
+    <footer class="relative bg-gray-600 font-montserrat text-secondary p-4 border-t-8 border-gray-700 ">
       <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
           <img src="/src/assets/imagenes/logo_circulo.png" alt="logo_footer" class="w-12">

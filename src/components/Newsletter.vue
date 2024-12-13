@@ -4,8 +4,9 @@
 
 <template>
 <!--
-<div class="flex items-center justify-center min-h-screen bg-gradient-to-r from-[#dab866] to-black p-4 snap-item" data-aos="zoom-in-up" id="section5">
-  <div class="bg-white bg-opacity-30 p-8 rounded-2xl shadow-2xl max-w-lg w-full font-montserrat">
+<div class="relative flex items-center justify-center min-h-screen bg-gradient-to-r from-[#dab866] to-black p-4 snap-item">
+  <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-75" />
+  <div class="relative bg-white bg-opacity-30 p-8 rounded-2xl shadow-2xl max-w-lg w-full font-montserrat">
     <h2 class="text-3xl font-extrabold text-center mb-6 text-transparent bg-clip-text bg-gradient-to-r from-[#dab866] to-black">¡Únete a Nuestra Newsletter!</h2>
     <form class="space-y-6">
       <div>
@@ -26,6 +27,7 @@
       </div>
     </form>
   </div>
+
 </div>
 -->
 

@@ -11,6 +11,7 @@ import CursorCircle from './components/CursorCircle.vue'
 import Newsletter from './components/Newsletter.vue'
 import Navegadores from './components/Navegadores.vue'
 import Locaciones from './components/Locaciones.vue'
+import Certificacion from './components/Certificacion.vue'
 
 //document.addEventListener("DOMContentLoaded", function() {
 //  gsap.from(".snap-item:not([data-aos])", {
@@ -57,7 +58,7 @@ import Locaciones from './components/Locaciones.vue'
 
       <Locaciones />
 
-      
+      <Certificacion />
 
       <Newsletter />
     </main>
