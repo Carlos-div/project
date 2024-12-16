@@ -45,8 +45,8 @@
     
     .snap-container {
       overflow-y: scroll;
-      scroll-snap-type: y mandatory; /* Desplazamiento vertical obligatorio */
-      height: 100vh; /* Ajusta la altura para el contenedor */
+      scroll-snap-type: y mandatory; 
+      height: 100vh; 
       display: flex;
       flex-direction: column;
     }
@@ -86,3 +86,7 @@
       margin-bottom: 10px; /* Margen entre elementos */
     }
   
+/* Selection bg */
+.bg1::selection {
+  background-color: #d8b562; 
+}

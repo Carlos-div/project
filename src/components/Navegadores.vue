@@ -30,6 +30,12 @@
         <span>Ubicación</span>
       </div>
     </a>
+    <a href="#section6" class="button-container">
+      <div class="button group">
+        <div class="icon">6</div>
+        <span>Política</span>
+      </div>
+    </a>
   </section>
 </template>
 
@@ -43,7 +49,7 @@
 }
 
 .sec-reto .button {
-  @apply absolute top-0 right-0 h-16 w-16 font-sans overflow-hidden bg-amber-50 rounded-full cursor-pointer shadow-lg transition-all duration-500 ease-out;
+  @apply absolute top-0 right-0 h-16 w-16 font-montserrat overflow-hidden bg-amber-50 rounded-full cursor-pointer shadow-lg transition-all duration-500 ease-out;
 }
 
 .sec-reto .button:hover {
@@ -61,7 +67,7 @@
 }
 
 .sec-reto .button span {
-  @apply text-sm leading-none font-light ml-4;
+  @apply text-lg leading-none font-medium ml-4;
   opacity: 0;
   display: inline-block;
   transition: opacity 0.3s ease-out, margin-left 0.3s ease-out;

@@ -20,11 +20,11 @@ const toggleMenu = () => {
           </span>
         </RouterLink>
         <div class="hidden md:flex space-x-2 text-xs sm:space-x-6 sm:text-lg md:space-x-24 md:text-lg lg:text-xl font-montserrat" data-aos="zoom-in">
-          <a href="#services" class="text-primary underline-animation">Contrataciones</a> <!--Estos los invertí por que se invirtió el formato-->
-          <a href="#contracts" class="text-primary underline-animation">Servicios</a>
-          <a href="#acerca de" class="text-primary underline-animation pr-12">Acerca de</a>
+          <a href="#services" class="text-primary underline-animation bg1">Contrataciones</a> <!--Estos los invertí por que se invirtió el formato-->
+          <a href="#contracts" class="text-primary underline-animation bg1">Servicios</a>
+          <a href="#acerca de" class="text-primary underline-animation pr-12 bg1">Acerca de</a>
         </div>
-        <button @click="toggleMenu" class="relative md:hidden flex items-center px-3 py-2 border rounded text-black border-black hover:text-white hover:bg-[#f2e7cb] mr-6">
+        <button @click="toggleMenu" class="relative md:hidden flex items-center px-3 py-2 border rounded text-black border-black hover:text-white hover:bg-[#d8b562] mr-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);">
             <title>Menú</title>
             <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path></svg>
@@ -33,9 +33,9 @@ const toggleMenu = () => {
     </nav>
     <transition name="menu-fade">
       <div v-show="isOpen" class="md:hidden bg-white bg-opacity-50 fixed inset-0 flex flex-col items-center justify-center text-3xl font-montserrat space-y-6 backdrop-blur-sm z-40">
-        <a href="#services" class="text-primary underline-animation" @click="toggleMenu">Contrataciones</a>
-        <a href="#contracts" class="text-primary underline-animation" @click="toggleMenu">Servicios</a>
-        <a href="#acerca de" class="text-primary underline-animation" @click="toggleMenu">Acerca de</a>
+        <a href="#services" class="text-primary underline-animation bg1" @click="toggleMenu">Contrataciones</a>
+        <a href="#contracts" class="text-primary underline-animation bg1" @click="toggleMenu">Servicios</a>
+        <a href="#acerca de" class="text-primary underline-animation bg1" @click="toggleMenu">Acerca de</a>
       </div>
     </transition>
   </div>

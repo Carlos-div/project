@@ -4,151 +4,151 @@ import { ref, onMounted } from 'vue';
 const contents = [
   {
     title: 'BBVA',
-    description: 'Sirviendo a BBVA en su seguridad durante 45 años.',
+    description: 'BBVA es una institución financiera multinacional española, fundada en 1857. Ofrece una amplia gama de productos y servicios bancarios a nivel mundial.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso',
   },
   {
     title: 'CDMX',
-    description: 'CDMX, una marca icónica con una historia rica. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'La Ciudad de México (CDMX) es la capital del país, conocida por su riqueza cultural, histórica y arquitectónica.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Citibanamex',
-    description: 'Citibanamex, protegiendo Pizzas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Citibanamex es una de las instituciones bancarias más grandes de México, parte del grupo financiero Citigroup.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Coca-Cola',
-    description: 'Coca-cola, software de calidad. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Coca-Cola es una empresa estadounidense de bebidas, famosa por su refresco homónimo, con presencia en más de 200 países.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Conagua',
-    description: 'Conagua, único en su clase. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'La Comisión Nacional del Agua (Conagua) es una entidad gubernamental mexicana encargada de la gestión del agua en el país.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'DHL',
-    description: 'DHL, energía y acción. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'DHL es una empresa global de logística y transporte, conocida por su servicio eficiente y rápido.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Ferrero',
-    description: 'Ferrero, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Ferrero es una empresa italiana de confitería, famosa por productos como Nutella y los chocolates Ferrero Rocher.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'H. Juarez',
-    description: 'Hospital Juarez, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Hospital Juárez es una institución médica en México conocida por sus servicios de salud y atención especializada.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'IMSS',
-    description: 'IMMS, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'El Instituto Mexicano del Seguro Social (IMSS) es una institución pública de seguridad social que brinda servicios médicos y sociales a los trabajadores en México.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'ISEM',
-    description: 'ISEM, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'El Instituto de Salud del Estado de México (ISEM) es una entidad gubernamental que proporciona servicios de salud a los habitantes del Estado de México.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'ISSEMYM',
-    description: 'ISSEMYM, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'El Instituto de Seguridad Social del Estado de México y Municipios (ISSEMYM) ofrece servicios de seguridad social a los trabajadores del Estado de México.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'LICONSA',
-    description: 'LICONSA, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'LICONSA es una empresa estatal mexicana dedicada a la producción y distribución de leche para mejorar la nutrición de la población.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'NOVARTIS',
-    description: 'NOVARTIS, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'NOVARTIS es una compañía farmacéutica global suiza que se enfoca en la investigación, desarrollo y fabricación de medicamentos innovadores.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'P. de Hierro',
-    description: 'El palacio de Hierro, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'El Palacio de Hierro es una cadena de tiendas departamentales de lujo en México, conocida por su amplia gama de productos de alta calidad.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'PANINI',
-    description: 'PANINI, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'PANINI es una editorial italiana famosa por sus álbumes de cromos y coleccionables deportivos.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'ROTOPLAS',
-    description: 'ROTOPLAS, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'ROTOPLAS es una empresa mexicana líder en soluciones de almacenamiento, purificación y tratamiento de agua.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'SAMSUNG',
-    description: 'Samsung, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Samsung es una multinacional surcoreana de tecnología y electrónica, conocida por sus innovadores productos, desde teléfonos móviles hasta electrodomésticos.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Scotiabank',
-    description: 'Scotiabank, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Scotiabank es un banco internacional canadiense con una sólida presencia en México, ofreciendo una variedad de servicios financieros.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'TEC.',
-    description: 'Tecnológico de Monterrey, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'El Tecnológico de Monterrey es una universidad privada mexicana reconocida por su excelencia académica y programas innovadores.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Telcel',
-    description: 'Telcel, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Telcel es la principal empresa de telecomunicaciones en México, ofreciendo servicios de telefonía móvil y datos.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Toyota',
-    description: 'Toyota, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Toyota es una compañía automotriz japonesa, reconocida por sus vehículos confiables y eficientes.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'UAM',
-    description: 'UAM, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'La Universidad Autónoma Metropolitana (UAM) es una universidad pública en México, destacada por su compromiso con la educación y la investigación.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'UNITEC',
-    description: 'Unitec, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'La Universidad Tecnológica de México (UNITEC) es una institución privada de educación superior conocida por sus programas enfocados en la formación profesional.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'UVM',
-    description: 'UVM, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'La Universidad del Valle de México (UVM) es una de las universidades privadas más grandes del país, ofreciendo una amplia gama de programas educativos.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
   {
     title: 'Yakult',
-    description: 'Yakult, claridad y transparencia. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Yakult es una compañía japonesa dedicada a la producción de productos lácteos probióticos, famosa por su bebida fermentada.',
     slogan: 'Tu seguridad',
     slogan2: 'Nuestro compromiso'
   },
@@ -168,29 +168,29 @@ onMounted(() => {
     description.value = contents[currentContent.value].description;
     slogan.value = contents[currentContent.value].slogan;
     slogan2.value = contents[currentContent.value].slogan2;
-  }, 3000);
+  }, 9000);
 });
 
 </script>
 
-<template>
+<template> 
   <div class="relative h-screen flex justify-center items-center snap-item" id="section4">
     <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-75" />
     <div class="relative flex flex-col sm:flex-col bg-white shadow-4xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144 z-10 p-6">
       <div class="flex flex-col md:flex-row pt-12">
         <div class="w-full md:w-1/2 p-8 text-left">
-          <h1 class="font-montserrat font-extrabold text-gray-900 text-6xl">{{ title }}</h1>
-          <h3 class="font-montserrat font-extrabold text-gray-900 text-xl pt-4">{{ description }}</h3>
+          <h1 class="font-montserrat font-extrabold text-gray-900 text-5xl md:text-6xl bg1">{{ title }}</h1>
+          <h3 class="font-montserrat font-extrabold text-amber-950 text-md md:text-xl pt-4 bg1">{{ description }}</h3>
         </div>
         <div class="w-auto md:w-1/2 p-6 flex items-center justify-center bg-gray-100 bg-cover bg-center">
           <div class="text-center text-primary bg-opacity-50">
-            <h2 class="font-montserrat font-extrabold bg-gradient-to-r from-[#d3af5b] to-neutral-950 text-2xl md:text-5xl mb-2">{{ slogan }}</h2>
-            <h2 class="font-montserrat font-extrabold bg-gradient-to-r from-neutral-950 to-[#d3af5b] text-2xl md:text-5xl">{{ slogan2 }}</h2>
+            <h2 class="font-montserrat font-extrabold bg-gradient-to-r from-[#d3af5b] to-neutral-950 text-2xl md:text-5xl mb-2 bg1">{{ slogan }}</h2>
+            <h2 class="font-montserrat font-extrabold bg-gradient-to-r from-neutral-950 to-[#d3af5b] text-2xl md:text-5xl bg1">{{ slogan2 }}</h2>
           </div>
         </div>
       </div>
       <div class="overflow-hidden pt-6 pb-12 w-full">
-  <h1 class="font-montserrat font-extrabold text-primary text-center text-4xl p-6">Las empresas que confían en nosotros</h1>
+  <h1 class="font-montserrat font-extrabold text-primary text-center text-2xl md:text-4xl p-6 bg1 fadeInUp">Las empresas que confían en nosotros</h1>
   <div class="flex animate-scroll space-x-4 lg:space-x-16 sm:space-y-12 pt-6">
     <div class="flex space-x-4">
       <img src="/imagenes/bbva.png" alt="bbva_marcas" class="h-16 w-auto object-contain">
@@ -444,6 +444,62 @@ onMounted(() => {
     animation: scroll 200s linear infinite;
     --scroll-items: 24;
   }
+
+
+  /*.proof {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}*/
+.banner > a {
+    height: 125px;
+    width: 250px;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+} 
 </style>
 
 <!--<div data-aos="fade-left">
