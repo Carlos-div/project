@@ -220,7 +220,7 @@ export default {
     <div class="relative flex flex-col sm:flex-col bg-white shadow-4xl rounded-lg overflow-hidden transition-transform transform hover:scale-105 duration-300 ease-in-out max-w-6xl h-192 md:h-144 z-10 p-6">
       <div class="flex flex-col md:flex-row pt-12">
         <div class="w-full md:w-1/2 p-8 text-left">
-          <h1 class="font-montserrat font-extrabold text-gray-900 text-5xl md:text-6xl bg1">{{ 
+          <h1 class="font-montserrat font-extrabold text-gray-900 text-5xl md:text-3xl lg:text-6xl bg1">{{ 
           title }}</h1>
             <h3 class="font-montserrat font-extrabold text-amber-950 text-md md:text-xl pt-4 bg1">{{ 
             description }}</h3>

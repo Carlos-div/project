@@ -49,7 +49,7 @@
 }
 
 .sec-reto .button {
-  @apply absolute top-0 right-0 h-16 w-16 font-montserrat overflow-hidden bg-amber-50 rounded-full cursor-pointer shadow-lg transition-all duration-500 ease-out;
+  @apply absolute top-0 right-0 h-16 w-8 font-montserrat overflow-hidden bg-amber-50 rounded-full cursor-pointer shadow-lg transition-all duration-500 ease-out;
 }
 
 .sec-reto .button:hover {
@@ -62,7 +62,7 @@
 }
 
 .sec-reto .button .icon {
-  @apply inline-block w-16 h-16 text-center rounded-full transition-all duration-500 ease-out;
+  @apply inline-block w-8 h-16 text-center rounded-full transition-all duration-500 ease-out;
   line-height: 4rem;
 }
 
