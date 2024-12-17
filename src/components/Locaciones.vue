@@ -1,12 +1,39 @@
-<script setup>
+<script>
+import { ref, onMounted } from 'vue';
 
+export default {
+  setup() {
+    const proofElement = ref(null);
+
+    onMounted(() => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running'; // Activa la animación
+          } else {
+            entry.target.style.animationPlayState = 'paused'; // Pausa la animación cuando no está en la vista
+          }
+        });
+      });
+
+      // Observer should only observe after proofElement is rendered
+      if (proofElement.value) {
+        observer.observe(proofElement.value);
+      }
+    });
+
+    return {
+      proofElement
+    };
+  }
+};
 </script>
 
 
 <template>
     <div class="relative font-montserrat font-extrabold text-gray-900 snap-item z-10" id="section5">
         <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0 opacity-75" />
-        <h1 class="relative text-4xl md:text-5xl xl:text-6xl pt-24 pl-12 bg1">Locaciones de nuestras 3 corporaciones</h1>
+        <h1 ref="proofElement" class="relative text-4xl md:text-5xl xl:text-6xl pt-24 pl-12 bg1 anim-right">Locaciones de nuestras 3 corporaciones</h1>
         <div>
             <div class="grid grid-cols-3 pl-12 pt-16">
                 <!--LOMA-->
