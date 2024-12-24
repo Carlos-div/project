@@ -161,3 +161,9 @@
 .paused * { 
 	animation-play-state: paused;
 }
+
+/* hover transition */
+
+.hover-lapse {
+  transition: 0.5s;
+}

@@ -27,22 +27,22 @@ onMounted(() => {
   <div class="snap-footer">
     <footer class="relative font-montserrat text-primary p-4 border-t-8 border-gray-700">
       <img src="/imagenes/Foto.png" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full md:h-auto object-cover z-0 opacity-100" />
-      <div ref="proofElement" class="relative grid grid-cols-1 md:grid-cols-3 anim-up mt-6">
-        <div class="space-y-2 md:space-y-6 lg:space-y-8 xl:space-y-8 text-xs md:text-md lg:text-lg pt-6 md:pt-0 pl-0 md:pl-6">
+      <div ref="proofElement" class="relative grid grid-cols-1 md:grid-cols-3 anim-up sm:mt-6 md:mt-1 lg:mt-6">
+        <div class="space-y-2 md:space-y-4 lg:space-y-4 xl:space-y-8 text-xs md:text-md lg:text-xl pt-6 md:pt-0 pl-0 md:pl-6">
           <p class="font-medium bg1">CUERPOS DE SEGURIDAD AUXILIARES DEL VALLE DE MÉXICO</p>
           <p class="font-medium">Policía Auxiliar del, Prol. Galeana 28, La Loma, 54060 Tlalnepantla, Méx.</p>
           <p class="font-medium">52 55 XXXX XXXX</p>
           <img class="w-6 md:w-14" src="/imagenes/Logo.png" alt="Logo footer">
       </div>
 
-      <div class="space-y-2 md:space-y-6 lg:space-y-8 xl:space-y-8 uppercase text-xs md:text-md lg:text-xl pl-0 md:pl-16 lg:pl-24 xl:pl-40">
-          <p class="font-medium">Inicio</p>
+      <div class="space-y-2 md:space-y-4 lg:space-y-4 xl:space-y-8 uppercase text-xs md:text-md lg:text-xl pl-0 md:pl-16 lg:pl-24 xl:pl-40">
+        <a href="#about" class="font-medium hover:text-amber-700 hover-lapse">Inicio</a>
           <p class="font-medium">Servicios</p>
           <p class="font-medium">Contrataciones</p>
           <p class="font-medium">Ubicaciones</p>
       </div>
 
-      <div class="pt-8 md:pt-2 lg:pt-8 pl-0 md:pl-2 lg:pl-12 xl:pl-24"> 
+      <div class="pt-8 md:pt-2 lg:pt-2 pl-0 md:pl-0 lg:pl-12 xl:pl-24"> 
         <div class="subscribe">
           <p>SUBSCRIBETE</p>
             <input placeholder="EMAIL" class="subscribe-input" name="email" type="email">
@@ -51,14 +51,15 @@ onMounted(() => {
         </div>
       </div>
       </div>
-      <div class="mt-6 md:mt-2 lg:mt-2 xl:mt-2 w-full space-y-2 md:space-y-2 lg:space-y-4 xl:space-y-6 text-sm md:text-md">
-  <p class="relative flex justify-center items-center font-medium">Política de privacidad | Términos y condiciones</p>
-  <p class="relative flex justify-center items-center font-medium">2024 | CUSAEM todos los derechos reservados</p>
-</div>
 
+      <div class="mt-6 md:mt-0 lg:mt-0 xl:mt-2 w-full space-y-2 md:space-y-2 lg:space-y-2 xl:space-y-6 text-sm md:text-md">
+        <p class="relative flex justify-center items-center font-medium">Política de privacidad | Términos y condiciones</p>
+        <p class="relative flex justify-center items-center font-medium">2024 | CUSAEM todos los derechos reservados</p>
+      </div>
     </footer>
   </div>
-  </template>
+
+</template>
   
 
   <style>
