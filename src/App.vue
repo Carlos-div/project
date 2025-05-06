@@ -12,6 +12,7 @@ import Newsletter from './components/Newsletter.vue'
 import Navegadores from './components/Navegadores.vue'
 import Locaciones from './components/Locaciones.vue'
 import Certificacion from './components/Certificacion.vue'
+import ChatComponent from './components/ChatComponent.vue'
 
 //document.addEventListener("DOMContentLoaded", function() {
 //  gsap.from(".snap-item:not([data-aos])", {
@@ -62,6 +63,8 @@ import Certificacion from './components/Certificacion.vue'
 
       <Newsletter />
     </main>
+
+    <ChatComponent />
 
     <footer>
       <Footer />

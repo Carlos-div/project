@@ -167,6 +167,9 @@ onMounted(() => {
   outline: none;
   border-bottom: 1px solid #f7f7f7;
   font-family: 'montserrat';
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+             -13px -13px 100px #ffffff;
 }
 
 .subscribe .submit-btn {
@@ -189,7 +192,7 @@ onMounted(() => {
 }
 
 .subscribe .submit-btn:hover {
-  background-color: #737c1d;
+  background-color: #dac665;
   box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
 }
 </style>

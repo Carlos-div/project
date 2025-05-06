@@ -9,22 +9,22 @@
 
 
   <div class="snap-item relative">
-  <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0" />
-  <RouterLink :to="{ path: 'somos', hash: '#quesomos' }">
-    <div id="section1">
-      <!-- Del header enlace NO LO BORRES -->
-      <div id="acerca de"></div>
-      <!-- <div data-aos="fade-right" id="section1">-->
-      <div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
-        <video autoplay muted loop class="bg-video w-full h-full object-cover">
-          <source src="/imagenes/Quienes_somos.mp4" type="video/mp4">
-        </video>
-        <!-- Aquí el botón -->
-        <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+    <img src="/imagenes/fondo.jpg" alt="fondo cusaem" class="absolute top-0 left-0 w-full h-full object-cover z-0" />
+      <RouterLink :to="{ path: 'somos', hash: '#quesomos' }">
+      <div id="section1">
+          <!-- Del header enlace NO LO BORRES -->
+          <div id="acerca de"></div>
+          <!-- <div data-aos="fade-right" id="section1">-->
+        <div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
+          <video autoplay muted loop class="bg-video w-full h-full object-cover">
+            <source src="/imagenes/Quienes_somos.mp4" type="video/mp4">
+          </video>
+          <!-- Aquí el botón -->
+          <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+        </div>
       </div>
-    </div>
-  </RouterLink>
-</div>
+      </RouterLink>
+  </div>
 
 
 
@@ -36,15 +36,15 @@
       <div id="section2">
         <!--del header--><div id="contracts"></div>
         <!--<div data-aos="fade-left" id="section2">-->
-      <<div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
-        <video autoplay muted loop class="bg-video w-full h-full object-cover">
+        <div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
+          <video autoplay muted loop class="bg-video w-full h-full object-cover">
           <source src="/imagenes/Servicios.mp4" type="video/mp4">
-        </video>
+          </video>
         <!-- Aquí el botón -->
-        <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
-      </div> 
-  </div>    
-        </RouterLink>
+          <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+        </div> 
+      </div>    
+    </RouterLink>
   </div>
 
   <div class="snap-item relative">
@@ -54,18 +54,18 @@
         <!--del header--><div id="services"></div>
         <!--<div data-aos="fade-right" id="section3">-->
           <div class="relative border-4 border-black transform hover:scale-90 transition duration-500 rounded-lg h-screen">
-        <video autoplay muted loop class="bg-video w-full h-full object-cover">
-          <source src="/imagenes/Unete-.mp4" type="video/mp4">
-        </video>
-        <!-- Aquí el botón -->
-        <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+            <video autoplay muted loop class="bg-video w-full h-full object-top">
+              <source src="/imagenes/Unete-.mp4" type="video/mp4">
+            </video>
+            <!-- Aquí el botón -->
+            <button class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 text-2xl Btn1 text-center rounded-sm pt-1 pl-2">Conocer más</button>
+          </div>
       </div>
-  </div>
-        </RouterLink>
+    </RouterLink>
   </div>
 
   
- </div>
+</div>
 
 </template>
 

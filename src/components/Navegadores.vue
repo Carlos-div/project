@@ -3,37 +3,37 @@
     <a href="#section1" class="button-container">
       <div class="button group">
         <div class="icon">1</div>
-        <span>Acerca de</span>
+        <span class="text-black">Acerca de</span>
       </div>
     </a>
     <a href="#section2" class="button-container">
       <div class="button group">
         <div class="icon">2</div>
-        <span>Servicios</span>
+        <span class="text-black">Servicios</span>
       </div>
     </a>
     <a href="#section3" class="button-container">
       <div class="button group">
         <div class="icon">3</div>
-        <span>Empleo</span>
+        <span class="text-black">Empleo</span>
       </div>
     </a>
     <a href="#section4" class="button-container">
       <div class="button group">
         <div class="icon">4</div>
-        <span>Confianza</span>
+        <span class="text-black">Confianza</span>
       </div>
     </a>
     <a href="#section5" class="button-container">
       <div class="button group">
         <div class="icon">5</div>
-        <span>Ubicación</span>
+        <span class="text-black">Ubicación</span>
       </div>
     </a>
     <a href="#section6" class="button-container">
       <div class="button group">
         <div class="icon">6</div>
-        <span>Política</span>
+        <span class="text-black">Política</span>
       </div>
     </a>
   </section>
@@ -58,7 +58,7 @@
 
 .sec-reto .button:hover .icon {
   background-color: #ddbe73;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .sec-reto .button .icon {
@@ -133,7 +133,7 @@ export default {
     >
       <div class="button group">
         <div class="icon">{{ section.icon }}</div>
-        <span>{{ section.label }}</span>
+        <span class="text-black">{{ section.label }}</span>
       </div>
     </a>
   </section>
